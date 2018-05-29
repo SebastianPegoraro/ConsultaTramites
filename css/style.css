@@ -2,16 +2,14 @@ html {
     position: relative;
     min-height: 100%;
     overflow-x: hidden;
+      background-image: url('../img/fondo-unico.jpg');
+      background-position: right top;
+      background-repeat: repeat;
 }
 
 body {
     margin: 0 0 100px;
     /* bottom = footer height */
-}
-
-section {
-  height:100vh;
-  width: 100vw;
 }
 
 #contenidoNumero {
@@ -27,21 +25,23 @@ section {
 }
 
 .masterHead {
-  background-color: #025083;
+   background: linear-gradient(-90deg, #0089CB, #003F58);
 }
 
 #logoChaco {
-  height: 100px;
+  height: 70px;
   width: auto;
   border: none;
   margin-right: 10px;
+  margin-top: 15px;
   vertical-align: middle;
   display: inline-block;
 }
 
 .consulta {
-  background-color: rgba(2, 80, 131, 0.2);
-  height: 100%;
+  height: auto;
+  width: auto;
+  overflow-y: visible;
 }
 
 #footer {
@@ -51,7 +51,7 @@ section {
   height: 100px;
   width: 100%;
   overflow: hidden;
-  background-color: #025083;
+  background: linear-gradient(-45deg, #0089CB, #003F58);
 }
 
 .recuadro{
@@ -61,3 +61,26 @@ section {
 .asos {
   font-size: 20px;
 }
+
+.tittle{
+      margin-bottom: -5px;
+      color: #fff;
+      margin-top: 10px;
+}
+
+.subtittle{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#ecom {
+  height: 50px;
+  width: auto;
+}
+
+/*.shadowns {
+  box-shadow: 0 9px 0px 0px white,
+              0 -9px 0px 0px white,
+              12px 0 15px -4px rgba(31, 73, 125, 0.8),
+              -12px 0 15px -4px rgba(31, 73, 125, 0.8);
+}*/

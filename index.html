@@ -11,119 +11,109 @@
 
     <header class="masterHead">
       <div class="row">
-        <div class="col offset-sm-1">
+        <div class="col-md-4 offset-sm-1">
           <h1 class="tittle">MESA DE ENTRADA</h1>
-          <h3 class="tittle">Sistema de Consulta de Expedientes</h3>
+          <h4 class="subtittle">Sistema de Consulta de Expedientes y Actuaciones</h4>
         </div>
-        <div class="col offset-sm-4">
+        <div class="col offset-sm-3">
           <img src="img/chaco.png" alt="" id="logoChaco">
         </div>
       </div>
     </header>
-<br><br><br><br><br><br><br>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="recuadro">
-            <img src="img/asos.png" alt="">
-            <h1 class="text-center asos">Asociar</h1>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="consulta">
+      <br><br>
       <div class="container card">
-        <div class="row">
+        <div class="row shadowns">
           <div class="col">
-            <form class="form" action="index.html" method="post">
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Número: </label>
-                <div class="col-sm-1">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Jur">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Consulta por Número:
+                    </button>
+                  </h5>
                 </div>
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Año">
-                </div>
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Número">
-                </div>
-                <div class="col-sm-1">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Tipo">
-                </div>
-                <div class="col-sm-1">
-                  <a class="btn btn-primary" href="#" role="button" id="numero" onclick="muestra(contenidoNumero, 'numero')">Consultar</a>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">N° de Identificación de Origen: </label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="Identificación de Origen">
-                </div>
-                <div class="col-sm-1 offset-sm-4">
-                  <a class="btn btn-primary" href="#" role="button" id="identificacion" onclick="muestra(contenidoIdentificacion, 'identificacion')">Consultar</a>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">D.N.I.: </label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="D.N.I.">
-                </div>
-                <div class="col-sm-1 offset-sm-4">
-                  <a class="btn btn-primary" href="#" role="button" id="dni" onclick="muestra(contenidoDni, 'dni')">Consultar</a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <form class="form" action="index.html" method="post">
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Número: </label>
+                        <div class="col-sm-1">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Jur">
+                        </div>
+                        <div class="col-sm-2">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Año">
+                        </div>
+                        <div class="col-sm-2">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Número">
+                        </div>
+                        <div class="col-sm-1">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Tipo">
+                        </div>
+                        <div class="col-sm-1">
+                          <a class="btn btn-primary" href="#" role="button" id="numero" onclick="muestra(contenidoNumero, 'numero')">Consultar</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-            </form>
+              <br>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Consulta por N° de Identificación de Origen:
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <form class="form" action="index.html" method="post">
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">N° de Identificación de Origen: </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Identificación de Origen">
+                        </div>
+                        <div class="col-sm-1 offset-sm-4">
+                          <a class="btn btn-primary" href="#" role="button" id="identificacion" onclick="muestra(contenidoIdentificacion, 'identificacion')">Consultar</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Consulta D.N.I.:
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <form class="form" action="index.html" method="post">
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">D.N.I.: </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="D.N.I.">
+                        </div>
+                        <div class="col-sm-1 offset-sm-4">
+                          <a class="btn btn-primary" href="#" role="button" id="dni" onclick="muestra(contenidoDni, 'dni')">Consultar</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
-                  </button>
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="contenidoNumero">
+        <div class="row shadowns" id="contenidoNumero">
           <h1 class="text-center">Consulta de Trámite por Número</h1>
           <table class="table">
             <thead class="thead-dark">
@@ -162,7 +152,7 @@
             </tbody>
           </table>
         </div>
-        <div class="row" id="contenidoIdentificacion">
+        <div class="row shadowns" id="contenidoIdentificacion">
           <h1 class="text-center">Consulta de Trámite por Número de Identificación de Origen</h1>
           <table class="table">
             <thead class="thead-dark">
@@ -201,7 +191,7 @@
             </tbody>
           </table>
         </div>
-        <div class="row" id="contenidoDni">
+        <div class="row shadowns" id="contenidoDni">
           <h1 class="text-center">Trámites Relacionados al DNI ...</h1>
           <table class="table">
             <thead class="thead-dark">
@@ -244,7 +234,14 @@
     </section>
 
     <footer id="footer">
-      <h6>Powered by SebaPego S.A.</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h6 style="color: white; margin-top: 10px;">Desarrollado por: SebaPego</h6>
+            <img src="img/ecom.png" alt="" id="ecom">
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
