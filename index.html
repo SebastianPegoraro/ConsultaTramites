@@ -11,9 +11,11 @@
 
     <header class="masterHead">
       <div class="row">
-        <div class="col-md-4 offset-sm-1">
-          <h1 class="tittle">MESA DE ENTRADA</h1>
-          <h4 class="subtittle">Sistema de Consulta de Expedientes y Actuaciones</h4>
+        <div class="col-md-2">
+          <img src="img/logo-sgt.png" alt="" id="logoSGT">
+        </div>
+        <div class="col-md-4">
+          <h1 class="tittle regular">SISTEMA GESTION DE TRÁMITE</h1>
         </div>
         <div class="col offset-sm-3">
           <img src="img/chaco.png" alt="" id="logoChaco">
@@ -25,13 +27,13 @@
       <br><br>
       <div class="container card">
         <div class="row shadowns">
-          <div class="col">
+          <div class="col acordion">
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Consulta por Número:
+                      <strong><u>Consulta por Número:</u></strong> Trae un único Expediente o Actuación. Ej: 2-2018-917-A
                     </button>
                   </h5>
                 </div>
@@ -41,16 +43,30 @@
                       <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Número: </label>
                         <div class="col-sm-1">
-                          <input type="text" class="form-control" id="inputPassword" placeholder="Jur">
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Jur</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
                         </div>
                         <div class="col-sm-2">
-                          <input type="text" class="form-control" id="inputPassword" placeholder="Año">
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Año</option>
+                            <option value="1">2018</option>
+                            <option value="2">2017</option>
+                            <option value="3">2016</option>
+                          </select>
                         </div>
                         <div class="col-sm-2">
                           <input type="text" class="form-control" id="inputPassword" placeholder="Número">
                         </div>
-                        <div class="col-sm-1">
-                          <input type="text" class="form-control" id="inputPassword" placeholder="Tipo">
+                        <div class="col-sm-2">
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Tipo</option>
+                            <option value="1">A</option>
+                            <option value="2">E</option>
+                          </select>
                         </div>
                         <div class="col-sm-1">
                           <a class="btn btn-primary" href="#" role="button" id="numero" onclick="muestra(contenidoNumero, 'numero')">Consultar</a>
@@ -65,7 +81,7 @@
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Consulta por N° de Identificación de Origen:
+                      <strong><u>Consulta por N° de Identificación de Origen:</u></strong> Trae un único Expediente o Actuación, pero solo por el número de Origen. Ej: 5-8123-5
                     </button>
                   </h5>
                 </div>
@@ -90,7 +106,7 @@
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Consulta D.N.I.:
+                      <strong><u>Consulta D.N.I.:</u></strong> Se muestran los trámites relacionados al DNI ingresado, solo su última actualización
                     </button>
                   </h5>
                 </div>
@@ -151,6 +167,12 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+            <div class="col offset-md-1">
+              <button type="button" name="button" class="btn btn-outline-primary"> Imprimir </button>
+            </div>
+          </div>
+          <br>
         </div>
         <div class="row shadowns" id="contenidoIdentificacion">
           <h1 class="text-center">Consulta de Trámite por Número de Identificación de Origen</h1>
@@ -190,42 +212,57 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+            <div class="col offset-md-1">
+              <button type="button" name="button" class="btn btn-outline-primary"> Imprimir </button>
+            </div>
+          </div>
+          <br>
         </div>
         <div class="row shadowns" id="contenidoDni">
           <h1 class="text-center">Trámites Relacionados al DNI ...</h1>
           <table class="table">
             <thead class="thead-dark">
               <tr>
+                <th scope="col">Trámite</th>
                 <th scope="col">Fecha</th>
-                <th scope="col">Hora</th>
-                <th scope="col">Ofina</th>
+                <th scope="col">Ubicación</th>
                 <th scope="col">Situación</th>
+                <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody>
               <tr>
+                <td><a href="#">E 2-2018-917-A</a></td>
                 <td>02/01/18</td>
-                <td>12:08</td>
                 <td>GORNACION - TECNOLOGIAS DE INFORMACIÓN</td>
                 <td>Grabación del Trámite</td>
+                <td><button type="button" name="button" class="btn btn-outline-primary btn-sm"> Imprimir </button> <br>
+                  <button type="button" name="button" class="btn btn-outline-info btn-sm btn-block"> Ver </button></td>
               </tr>
               <tr>
+                <td><a href="#">E 2-2018-7088-A</a></td>
                 <td>02/01/18</td>
-                <td>12:30</td>
                 <td>GORNACION - TECNOLOGIAS DE INFORMACIÓN</td>
                 <td>Pase a DIRECCION UNIDAD DE RECURSOS HUMANOS</td>
+                <td><button type="button" name="button" class="btn btn-outline-primary btn-sm"> Imprimir </button> <br>
+                  <button type="button" name="button" class="btn btn-outline-info btn-sm btn-block"> Ver </button></td>
               </tr>
               <tr>
+                <td><a href="#">E 2-2018-7065-A</a></td>
                 <td>16/01/18</td>
-                <td>18:51</td>
                 <td>GORNACION - DIRECCION UNIDAD DE RECURSOS HUMANOS</td>
                 <td>Pase a DEPARTAMENTO CERTIFICACIONES Y LEGAJOS GOBERNACION</td>
+                <td><button type="button" name="button" class="btn btn-outline-primary btn-sm"> Imprimir </button> <br>
+                  <button type="button" name="button" class="btn btn-outline-info btn-sm btn-block"> Ver </button></td>
               </tr>
               <tr>
+                <td><a href="#">E 2-2018-27-A</a></td>
                 <td>09/02/18</td>
-                <td>09:34</td>
                 <td>GORNACION - DEPARTAMENTO CERTIFICACIONES Y LEGAJOS GOBERNACION</td>
                 <td>Se Agregaron Observaciones </td>
+                <td><button type="button" name="button" class="btn btn-outline-primary btn-sm"> Imprimir </button> <br>
+                  <button type="button" name="button" class="btn btn-outline-info btn-sm btn-block"> Ver </button></td>
               </tr>
             </tbody>
           </table>
@@ -237,7 +274,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h6 style="color: white; margin-top: 10px;">Desarrollado por: SebaPego</h6>
+            <h6 style="color: white; margin-top: 10px;">Realizado por: Seba &amp Ariel</h6>
             <img src="img/ecom.png" alt="" id="ecom">
           </div>
         </div>
