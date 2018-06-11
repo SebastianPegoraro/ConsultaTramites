@@ -28,14 +28,14 @@
       <div class="container card">
         <div class="row shadowns">
           <div class="col acordion">
-            <div id="accordion">
+            <div id="accordion" class="text-center">
               <div class="card">
                 <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
+                  <h3 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      <strong><u>Consulta por Número:</u></strong> Trae un único Expediente o Actuación. Ej: 2-2018-917-A
+                      <h1><strong><u>Consulta por Número:</u></strong></h1> <h5>Muestra un único Expediente o Actuación. Ej: 2-2018-917-A</h5>
                     </button>
-                  </h5>
+                  </h3>
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
@@ -68,7 +68,7 @@
                             <option value="2">E</option>
                           </select>
                         </div>
-                        <div class="col-sm-1">
+                        <div class="col-sm-1 offset-sm-1">
                           <a class="btn btn-primary" href="#" role="button" id="numero" onclick="muestra(contenidoNumero, 'numero')">Consultar</a>
                         </div>
                       </div>
@@ -81,7 +81,7 @@
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <strong><u>Consulta por N° de Identificación de Origen:</u></strong> Trae un único Expediente o Actuación, pero solo por el número de Origen. Ej: 5-8123-5
+                      <h2><strong><u>Consulta por N° de Identificación de Origen:</u></strong></h2> <h5>Muentra un único Expediente o Actuación, con el N° de Indentificación de Origen. Ej: 5-8123-5</h5>
                     </button>
                   </h5>
                 </div>
@@ -106,7 +106,7 @@
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <strong><u>Consulta D.N.I.:</u></strong> Se muestran los trámites relacionados al DNI ingresado, solo su última actualización
+                      <h1><strong><u>Consulta D.N.I.:</u></strong></h1> <h5>Muestra los trámites asociados al DNI ingresado, solo su última actualización</h5>
                     </button>
                   </h5>
                 </div>
@@ -130,9 +130,9 @@
           </div>
         </div>
         <div class="row shadowns" id="contenidoNumero">
-          <h1 class="text-center">Consulta de Trámite por Número</h1>
+          <h1 class="text-center bold tittle-table">Consulta de Trámite por Número</h1>
           <table class="table">
-            <thead class="thead-dark">
+            <thead class="thead-dark head-table">
               <tr>
                 <th scope="col">Fecha</th>
                 <th scope="col">Hora</th>
@@ -175,7 +175,7 @@
           <br>
         </div>
         <div class="row shadowns" id="contenidoIdentificacion">
-          <h1 class="text-center">Consulta de Trámite por Número de Identificación de Origen</h1>
+          <h2 class="text-center bold tittle-table">Consulta de Trámite por Número de Identificación de Origen</h2>
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -220,7 +220,7 @@
           <br>
         </div>
         <div class="row shadowns" id="contenidoDni">
-          <h1 class="text-center">Trámites Relacionados al DNI ...</h1>
+          <h1 class="text-center bold tittle-table">Trámites Relacionados al DNI ...</h1>
           <table class="table">
             <thead class="thead-dark">
               <tr>
@@ -274,8 +274,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h6 style="color: white; margin-top: 10px;">Realizado por: Seba &amp Ariel</h6>
-            <img src="img/ecom.png" alt="" id="ecom">
+
           </div>
         </div>
       </div>
