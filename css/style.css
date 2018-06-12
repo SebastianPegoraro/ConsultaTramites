@@ -75,9 +75,10 @@ body {
   margin-bottom: 20px;
 }
 
-#ecom {
-  height: 50px;
+.logos img{
+  height: 80px;
   width: auto;
+  margin-top: 10px;
 }
 
 /*.shadowns {
