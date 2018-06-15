@@ -2,10 +2,10 @@ html {
     position: relative;
     min-height: 100%;
     overflow-x: hidden;
-      background-image: url('../img/fondo-horizontal.jpg');
-      background-position: right top;
-      background-repeat: repeat-y;
-      background-size: contain;
+    background-image: url('../img/fondo-horizontal.jpg');
+    background-position: right top;
+    background-repeat: repeat-y;
+    background-size: contain;
 }
 
 body {
